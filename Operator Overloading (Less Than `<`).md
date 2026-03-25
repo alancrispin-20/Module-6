@@ -1,12 +1,12 @@
 # 🐍 Python OOP: Operator Overloading (Less Than `<`)
 
-## 🎯 AIM
+## 🎯 AIM :
 
 To write a Python program that demonstrates **operator overloading** by overloading the **less than (`<`)** operator using a custom class.
 
 ---
 
-## 🧠 ALGORITHM
+## 🧠 ALGORITHM :
 
 1. **Create Class `A`**:
    - Define the `__init__()` method to initialize the object with a value `a`.
@@ -24,8 +24,30 @@ To write a Python program that demonstrates **operator overloading** by overload
 
 ---
 
-## 💻 Program
+## 💻 Program :
 
-## Output
+class Number:
 
-## Result
+    def __init__(self, value):
+        self.value = value
+
+    def __lt__(self, other):
+        return self.value < other.value
+
+n1 = Number(int(input("Enter first number: ")))
+
+n2 = Number(int(input("Enter second number: ")))
+
+if n1 < n2:
+
+    print("First number is less than second number")
+else:
+
+    print("First number is not less than second number")
+    
+## Output :
+<img width="388" height="83" alt="image" src="https://github.com/user-attachments/assets/d71de1f2-d137-4be3-b7b0-45eaebff0c4f" />
+
+## Result :
+
+Thus the program is excuted and the output is obtained.
